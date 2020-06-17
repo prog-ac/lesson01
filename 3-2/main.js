@@ -11,17 +11,16 @@ for (let j = 1; j <= tate; j++) {
         if (j % 2 !== 0) {
             if (i % 2 !== 0) {
                 array.push(a)
-            } else if (i % 2 === 0) {
+            } else {
                 array.push(b)
             }
         } else {
-            if (j % 2 === 0) {
-                if (i % 2 !== 0) {
-                    array.push(b)
-                } else if (i % 2 === 0) {
-                    array.push(a)
-                }
+            if (i % 2 !== 0) {
+                array.push(b)
+            } else {
+                array.push(a)
             }
+
         }
     }
     console.log(array.join(''))
