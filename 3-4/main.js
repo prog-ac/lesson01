@@ -20,3 +20,4 @@ const numa = Number(reversed(a))
 const numb = Number(reversed(b))
 
 console.log(numa + numb)
+
