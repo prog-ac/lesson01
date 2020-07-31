@@ -1,22 +1,20 @@
 const vertical = Number(process.argv[2]);
 const horizontal = Number(process.argv[3]);
 
-const shape = [];
 
-for(let i = 0; i < vertical; i++){
-  shape.push([]);
+
+for(let i = 0 , shape = ''; i < vertical; i++){
 
   if(i % 2 !== 0){
     for(let m = 0 ; m < horizontal ; m++){
-      let a = m % 2 !== 0 ? '*' : '-';
-      shape[i].push(a);
+      shape += m % 2 !== 0 ? '*' : '-';
     }
+    console.log(shape);
   } else {
     for(let m = 0 ; m < horizontal ; m++){
-      let b = m % 2 === 0 ? '*' : '-';
-      shape[i].push(b);
+      shape += m % 2 === 0 ? '*' : '-';
     }
+    console.log(shape);
   }
 }
 
-console.table(shape);
