@@ -2,7 +2,7 @@ const str = "こはるはるここはるここはるはるここはるこはる�
 
 const searchingWord = `こはる`;
 const searchingWord2 = `はるこ`;
-const searchingWordCount = `こはる`.length;
+const searchingWordCount = searchingWord.length;
 let counts = 0;
 let counts2 = 0;
 
